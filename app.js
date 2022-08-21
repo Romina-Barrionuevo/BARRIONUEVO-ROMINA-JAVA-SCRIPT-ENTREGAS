@@ -2,27 +2,23 @@
 
 /* CREAR UN ALGORITMO UTILIZANDO UN CICLO
 
+NOTA******************************************************************************
+para ver mi resolucion SACAR COMENTARIOS en las respuestas
 
->>>Pedir número mediante prompt y sumarle otro número en cada repetición,
-realizando una salida por cada resultado
 
->>>Pedir un texto mediante prompt, concatenar un valor en cada repetición, 
-realizando una salida por cada resultado, hasta que se ingresa “ESC”.
-
->>>Pedir un número por prompt, repetir la salida del mensaje “Hola” la cantidad de veces ingresada.
  //////////////////////////////////////////////////////////////////////////////////////////////////////
 
 */
 
 //>>>Pedir número mediante prompt y sumarle otro número en cada repetición, realizando una salida por cada resultado
-/*
-opcion uno
+
+//opcion uno
 let numero = parseInt(prompt("ingrese un numero"))
 
 for(let i=0; i<=5 ; i++){
     let resultado = numero + i;
     console.log(`${numero} + ${i} = ${resultado}`);
-}*/
+}
 
 /*
 opcion 2
@@ -54,9 +50,10 @@ alert(texto);
 
 /*>>Pedir número mediante prompt y sumarle otro número en cada repetición, 
 realizando una salida por cada resultado*/
-
+/*
 let cantidad = parseInt(prompt("ingrese un numero de veces a repetir",0))
 
 for (let i = 0; i < cantidad; i++) {
         alert("hola");
 }
+*/
