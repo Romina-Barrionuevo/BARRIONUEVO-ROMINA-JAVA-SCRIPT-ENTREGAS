@@ -6,13 +6,9 @@
 h1{
     color:rgba(172, 255, 47, 0.822);
     text-align: center;
-    font-size: 80px;
-    margin-top: 300px;
-    text-shadow: 0 0 50px rgba(128, 255, 0, 0.863), 0 0 15px rgba(241, 235, 235, 0.685), 0 0 17px rgba(255, 0, 255, 0.753);
     
 }
 h2{
     color:rgba(248, 248, 52, 0.671);
     text-align: center;
-    font-size: 18px;
 }

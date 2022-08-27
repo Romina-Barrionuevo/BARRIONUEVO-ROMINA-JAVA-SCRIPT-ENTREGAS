@@ -1,59 +1,85 @@
-//DESAFIO COMPLEMENTARIO CLASE 3 CICLOS E ITERACIONES//
+//funcion saludar
 
-/* CREAR UN ALGORITMO UTILIZANDO UN CICLO
-
-NOTA******************************************************************************
-para ver mi resolucion SACAR COMENTARIOS en las respuestas
-
-
- //////////////////////////////////////////////////////////////////////////////////////////////////////
-
-*/
-
-//>>>Pedir número mediante prompt y sumarle otro número en cada repetición, realizando una salida por cada resultado
-
-//opcion uno
-let numero = parseInt(prompt("ingrese un numero"))
-
-for(let i=0; i<=5 ; i++){
-    let resultado = numero + i;
-    console.log(`${numero} + ${i} = ${resultado}`);
+function saludar () {
+    alert (
+        "Hola! bienvenido a nuestra tienda, un placer " +
+        nombre + 
+        ", te invitamos a mirar nuestros productos"
+    );
 }
 
-/*
-opcion 2
-let numero = parseInt(prompt("ingrese un numero base"))
+//funcion de la compra
 
-for(let i=0; i<10 ; i++){
-    let numero2 = parseInt(prompt("ingrese numero a sumar"));
-    resultado = numero + numero2;
-    console.log(`${numero} + ${numero2} = ${resultado}`);
+function compra() {
+    producto = prompt(
+        "Elije el producto que estas buscando: \n 1: Remera \n 2: Pantalon \n 3: Vestido \n 4: Cartera"
+    );
+
+    if ( producto === "1") {
+        alert("Agregaste Remera a tu compra");
+    } else if (producto === "2") {
+        alert("Agregaste Pantalón a tu compra");
+    } else if (producto === "3") {
+        alert("Agregaste Vestido a tu compra");
+    } else if (producto === "4") {
+        alert("Agregaste Cartera a tu compra");
 }
-*/
+//interactuo para finalizar compra
+opcion = prompt (
+    "Ingrese una opción \n 2: Mostrar Saldo \n 3: Finalizar"
+);
 
-/////////////////////////////////////////////////////////////////////////////////////////////////
- /*>>>Pedir un texto mediante prompt, concatenar un valor en cada repetición, 
-realizando una salida por cada resultado, hasta que se ingresa “ESC”.*/
-/*
-let inicio = prompt("ingrese palabra a concatenar o ESC para interrumpir: ");
-
-let texto = " ";
-
-while (inicio != "ESC" && inicio != "esc") {
-    texto += inicio + " ";
-    inicio = prompt("ingrese palabra a concatenar o ESC para interrumpir: ")
 }
-alert(texto);
-*/
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////
+//Funcion Finalizar compra
 
-/*>>Pedir número mediante prompt y sumarle otro número en cada repetición, 
-realizando una salida por cada resultado*/
-/*
-let cantidad = parseInt(prompt("ingrese un numero de veces a repetir",0))
-
-for (let i = 0; i < cantidad; i++) {
-        alert("hola");
+function finalizarCompra (){
+    if (producto === "1") {
+        alert(
+            "Agregó Remera por $" + remera
+        );
+    } else if (producto === "2") {
+        alert(
+            "Agregó Pantalon por $" + pantalon
+        );
+    } else if(producto === "3") {
+        alert(
+            "Agregó Vestido por $" + vestido
+        );
+    } else if(producto === "4") {
+        alert(
+            "Agregó Cartera por $" + cartera
+        );
+    } 
 }
-*/
+
+//variables
+
+let producto;
+let remera = 1200;
+let pantalon = 8000;
+let vestido = 5800;
+let cartera = 5000;
+
+
+
+let nombre = prompt("Ingrese su nombre");
+saludar();
+
+
+let opcion = prompt(
+    "ingrese una opcion: \n 1: Realizar la Compra \n 2: Finalizar la compra \n 3: Terminar"
+);
+
+
+for (let i=0 ; i<2 ; i++ ) {
+if (opcion === "1") {
+    compra();
+}else if (opcion === "2") {
+    finalizarCompra();
+}else if (opcion === "3") {
+break;
+}
+}
+
+alert ("Gracias por su Compra, vuelva pronto")
