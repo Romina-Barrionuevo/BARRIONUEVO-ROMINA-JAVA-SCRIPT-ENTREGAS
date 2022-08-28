@@ -68,7 +68,7 @@ saludar();
 
 
 let opcion = prompt(
-    "ingrese una opcion: \n 1: Realizar la Compra \n 2: Finalizar la compra \n 3: Terminar"
+    "Ingrese una opcion: \n 1: Realizar la Compra \n 2: Finalizar la compra \n 3: Terminar"
 );
 
 
